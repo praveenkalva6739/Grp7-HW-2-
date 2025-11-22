@@ -225,6 +225,7 @@ def create_monthly_net_amount_chart(monthly_summary_df: pd.DataFrame) -> str:
     plt.figure(figsize=(10, 5))
     monthly_summary_df["net_amount"].plot(kind="bar")
     plt.title("Monthly Net Amount")
+
     plt.xlabel("Year-Month")
     plt.ylabel("Net Amount")
     plt.tight_layout()
